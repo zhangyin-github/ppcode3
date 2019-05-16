@@ -15,5 +15,6 @@ To meet these expectations, PPCode3 is:
 PPCode3 use maven to manage all the dependencies. However, [thesallab.configuration](https://github.com/zhangyin-github/thesallab.configuration) has to be installed manually using maven.
 ## Examples
 To be updated when the first code is shipped.
+For more information, please visit our [Wiki](wiki).
 ## License
 PPCode3 is licensed under the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0-standalone.html). 
