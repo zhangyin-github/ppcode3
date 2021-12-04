@@ -2,7 +2,7 @@
 ## Update
 * We are about to ship our first wave of algorithms. (2021/12/4)
 ## Introduction
-ppcode3 is a simulation toolkit to speed up research on coding theory. PPCode3 is expected to:
+ppcode3 is a simulation toolkit to speed up research on coding theory. ppcode3 is expected to:
 * be easy to develop
 * be easy to use
 * provide a bunch of codes to compare their performance
