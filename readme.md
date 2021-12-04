@@ -1,5 +1,5 @@
 # ppcode3 Shared Source Project
-## Updates
+## Update
 * We are about to ship our first wave of algorithms. (2021/12/4)
 ## Introduction
 ppcode3 is a simulation toolkit to speed up research on coding theory. PPCode3 is expected to:
