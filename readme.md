@@ -15,7 +15,7 @@ To meet these expectations, ppcode3 is:
 * multithreaded to save running time
 ## Dependencies
 ppcode3 use maven to manage all the dependencies. However, [thesallab.configuration](https://github.com/zhangyin-github/thesallab.configuration) has to be installed manually using maven.
-## Examples
+## Use
 Please visit our [Wiki](https://github.com/zhangyin-github/ppcode3/wiki).
 ## License
 ppcode3 is licensed under the [GNU Lesser General Public License v3.0](https://www.gnu.org/licenses/lgpl-3.0-standalone.html).
