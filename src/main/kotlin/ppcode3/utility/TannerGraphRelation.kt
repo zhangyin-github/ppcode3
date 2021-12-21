@@ -17,14 +17,15 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.utility
+
 
 /**
- * 编码器工厂。
+ * Tanner图关系。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class TannerGraphRelation {
 
     // **************** 公开属性
 

@@ -17,14 +17,25 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.exception
+
+import ppcode3.ControlMessage
+import kotlin.reflect.KClass
 
 /**
- * 编码器工厂。
+ * 控制消息非法异常。
  *
+ * @param state 当前状态。
+ * @param expectedControlMessageType 期望控制消息类型。
+ * @param controlMessageType 控制消息类型。
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class IllegalControlMessageException(
+    state: Enum<*>, expectedControlMessageType: KClass<out ControlMessage>,
+    controlMessageType: KClass<out ControlMessage>
+) : IllegalArgumentException(
+    "Control message needs to be ${expectedControlMessageType.simpleName} in state ${state.name} but is ${controlMessageType.simpleName}."
+) {
 
     // **************** 公开属性
 

@@ -17,14 +17,21 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.exception
+
+import ppcode3.ResponseMessage
+
 
 /**
- * 编码器工厂。
+ * 未知响应消息异常。
  *
+ * @param responseMessage 响应消息。
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class UnknownResponseMessageExecption(responseMessage: ResponseMessage) :
+    IllegalStateException(
+        "Unknown response message ${responseMessage::class.simpleName}."
+    ) {
 
     // **************** 公开属性
 

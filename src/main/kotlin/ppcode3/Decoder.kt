@@ -1,20 +1,20 @@
 /*
- * Copyright (c) 2019 Zhang, Yin; Zhao, Yuli
+ * Copyright (c) 2019-2021 Zhang, Yin; Zhao, Yuli
  *
- * This file is part of PPCode3.
+ * This file is part of ppcode3.
  *
- * PPCode3 is free software: you can redistribute it and/or modify
+ * ppcode3 is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
  *
- * PPCode3 is distributed in the hope that it will be useful,
+ * ppcode3 is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU Lesser General Public License for more details.
  *
  * You should have received a copy of the GNU Lesser General Public License
- * along with PPCode3.  If not, see <http://www.gnu.org/licenses/>.
+ * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
 package ppcode3
@@ -28,6 +28,12 @@ package ppcode3
 abstract class Decoder(val logger: Logger) {
 
     // **************** 公开属性
+
+    // **************** 私有属性
+
+    // **************** 继承方法
+
+    // **************** 公开方法
 
     /**
      * 根据[controlMessage]作出响应。
@@ -44,11 +50,10 @@ abstract class Decoder(val logger: Logger) {
      */
     abstract fun finished(): Boolean
 
-    // **************** 私有属性
-
-    // **************** 继承方法
-
-    // **************** 公开方法
+    /**
+     * 关闭。
+     */
+    abstract fun close()
 
     // **************** 私有方法
 

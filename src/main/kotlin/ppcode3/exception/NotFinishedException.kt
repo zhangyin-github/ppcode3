@@ -17,26 +17,11 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.exception
 
 /**
- * 编码器工厂。
+ * 解码未完成异常。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
-
-    // **************** 公开属性
-
-    // **************** 私有属性
-
-    // **************** 继承方法
-
-    // **************** 公开方法
-
-    // **************** 私有方法
-
-    // **************** 伴生对象
-
-
-}
+class NotFinishedException : IllegalStateException("Decoding is not finished.")

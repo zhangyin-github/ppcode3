@@ -17,14 +17,19 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.equalerrorprotection.online
+
+import ppcode3.ResponseMessage
+
 
 /**
- * 编码器工厂。
+ * 改变编码器输出符号度响应消息。
  *
+ * @param degree: 度。
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class ChangingEncoderOutputSymbolDegreeResponseMessage(val degree: Int) :
+    ResponseMessage() {
 
     // **************** 公开属性
 

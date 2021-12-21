@@ -17,22 +17,41 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.equalerrorprotection.online
+
+import ppcode3.equalerrorprotection.fixnumberinputsymbol.FnisInputSymbol
+
 
 /**
- * 编码器工厂。
+ * 在线输入符号。
  *
+ * @param index 索引。
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class OnlineInputSymbol(index: Int) : FnisInputSymbol(index) {
 
     // **************** 公开属性
+
+    /**
+     * 是否为白色。
+     */
+    var isWhite: Boolean = true
+
+    /**
+     * 连通分量。
+     */
+    var component: OnlineInputSymbolComponent =
+        OnlineInputSymbolComponent(index)
 
     // **************** 私有属性
 
     // **************** 继承方法
 
     // **************** 公开方法
+
+    init {
+        component.inputSymbols.add(this)
+    }
 
     // **************** 私有方法
 

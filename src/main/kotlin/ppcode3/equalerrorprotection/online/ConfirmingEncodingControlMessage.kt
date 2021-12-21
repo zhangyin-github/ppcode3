@@ -19,12 +19,13 @@
 
 package ppcode3
 
+
 /**
- * 编码器工厂。
+ * 确认继续编码控制消息。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class ConfirmingEncodingControlMessage : ControlMessage() {
 
     // **************** 公开属性
 

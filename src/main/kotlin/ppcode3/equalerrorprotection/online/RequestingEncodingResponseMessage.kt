@@ -19,12 +19,13 @@
 
 package ppcode3
 
+
 /**
- * 编码器工厂。
+ * 请求继续编码响应消息。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class RequestingEncodingResponseMessage : ResponseMessage() {
 
     // **************** 公开属性
 

@@ -17,14 +17,20 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.exception
 
 /**
- * 编码器工厂。
+ * 解码时状态非法异常。
  *
+ * @param expectedState 期望状态。
+ * @param currentState 当前状态。
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class IllegalStateDecodingException(
+    expectedState: Enum<*>, currentState: Enum<*>
+) : IllegalStateException(
+    "State needs to be in ${expectedState.name} when decoding but is in ${currentState.name}."
+) {
 
     // **************** 公开属性
 

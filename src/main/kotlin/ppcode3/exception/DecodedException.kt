@@ -17,14 +17,16 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.exception
 
 /**
- * 编码器工厂。
+ * 已解码异常。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class DecodedException : IllegalStateException(
+    "All input symbols have been decoded"
+) {
 
     // **************** 公开属性
 
@@ -37,6 +39,5 @@ abstract class EncoderFactory {
     // **************** 私有方法
 
     // **************** 伴生对象
-
 
 }

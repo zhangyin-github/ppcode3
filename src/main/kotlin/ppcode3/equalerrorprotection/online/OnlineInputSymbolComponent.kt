@@ -17,22 +17,38 @@
  * along with ppcode3.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package ppcode3
+package ppcode3.equalerrorprotection.online
+
 
 /**
- * 编码器工厂。
+ * 在线输入符号连通分量。
  *
  * @author Zhang, Yin
  */
-abstract class EncoderFactory {
+class OnlineInputSymbolComponent(val index: Int) {
 
     // **************** 公开属性
+
+    /**
+     * 输入符号。
+     */
+    val inputSymbols: MutableList<OnlineInputSymbol> = mutableListOf()
 
     // **************** 私有属性
 
     // **************** 继承方法
 
     // **************** 公开方法
+
+    /**
+     * 将[onlineInputSymbol]添加到连通分量。
+     */
+    fun add(inputSymbol: OnlineInputSymbol) {
+        inputSymbol.component.inputSymbols.forEach {
+            it.component = this
+            inputSymbols.add(it)
+        }
+    }
 
     // **************** 私有方法
 
