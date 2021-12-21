@@ -1,5 +1,6 @@
 # ppcode3 Shared Source Project
 ## Update
+* Online code is now available. (2021/12/22)
 * We are about to ship our first wave of algorithms. (2021/12/4)
 ## Introduction
 ppcode3 is a simulation toolkit to speed up research on channel coding theory. ppcode3 is expected to:
