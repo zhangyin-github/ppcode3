@@ -1,8 +1,8 @@
 # ppcode3 Shared Source Project
 ## Update
 * [Expanding Window Code](https://github.com/zhangyin-github/ppcode3/wiki/code-uep-expanding-window) is now available. (2021/12/24)
-* [Improved Online code](https://github.com/zhangyin-github/ppcode3/wiki/code-ep-imrpovedonline) is now available. (2021/12/23)
-* [Online code](https://github.com/zhangyin-github/ppcode3/wiki/code-ep-online) is now available. (2021/12/22)
+* [Improved Online Code](https://github.com/zhangyin-github/ppcode3/wiki/code-ep-imrpovedonline) is now available. (2021/12/23)
+* [Online Code](https://github.com/zhangyin-github/ppcode3/wiki/code-ep-online) is now available. (2021/12/22)
 * We are about to ship our first wave of algorithms. (2021/12/4)
 ## Introduction
 ppcode3 is a simulation toolkit to speed up research on channel coding theory. ppcode3 is expected to:
