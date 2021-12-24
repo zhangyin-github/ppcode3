@@ -1,13 +1,13 @@
 package ppcode3
 
-import com.fasterxml.jackson.databind.node.ObjectNode
+import java.math.BigInteger
 
 /**
- * 日志工具。
+ * 已删除输出符号。
  *
  * @author Zhang, Yin
  */
-abstract class Logger {
+class ErasedOutputSymbol : EncoderOutputSymbol(BigInteger.ZERO) {
 
     // **************** 公开属性
 
@@ -16,16 +16,6 @@ abstract class Logger {
     // **************** 继承方法
 
     // **************** 公开方法
-
-    /**
-     * 将[logNode]写入日志。
-     */
-    abstract fun log(logNode: ObjectNode, logger: Any)
-
-    /**
-     * 关闭。
-     */
-    abstract fun close()
 
     // **************** 私有方法
 
