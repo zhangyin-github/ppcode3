@@ -28,7 +28,7 @@ abstract class OutputSymbolDegreeGeneratorFactory {
 
     companion object {
         val THIS: String =
-            "${App.APP}.fnis.${OutputSymbolDegreeGeneratorFactory::class.simpleName!!.toLowerCase()}"
+            "${App.APP}.${OutputSymbolDegreeGeneratorFactory::class.simpleName!!.toLowerCase()}"
 
         /**
          * 固定输入符号数量输出符号度生成工具工厂配置项键。
