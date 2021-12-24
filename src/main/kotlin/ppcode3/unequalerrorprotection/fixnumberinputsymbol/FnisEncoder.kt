@@ -16,7 +16,7 @@ import java.math.BigInteger
  * @param numberInputSymbol 输入符号数量。
  * @param sizeInputSymbol 输入符号规模。
  * @author Zhang, Yin
- */ // TODO Remove fnis before SS release
+ */
 abstract class FnisEncoder(
     logger: Logger, data: ByteArray, sizeImportantData: Int,
     val numberInputSymbol: Int, val sizeInputSymbol: Int
