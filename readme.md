@@ -38,4 +38,4 @@ Please consider cite our research paper
 ```
 ## Publications
 * Zhao, Yuli, et al. "Improved online fountain codes." IET Communications 12.18 (2018): 2297-2304.
-* Zhao, Yuli, et al. "Duplicated Zigzag Decodable Fountain Codes with the Unequal Error Protection Property." Computer Communications (Accepted).
+* Zhao, Yuli, et al. "Duplicated Zigzag Decodable Fountain Codes with the Unequal Error Protection Property." Computer Communications. https://doi.org/10.1016/j.comcom.2021.12.016
